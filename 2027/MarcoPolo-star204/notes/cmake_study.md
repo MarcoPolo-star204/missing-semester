@@ -11,7 +11,7 @@
 - **Makefile + make 工具**：相当于 “自动编译说明书”，提前定义好编译规则、顺序和依赖，敲一次 `make` 就能自动完成全量编译，实现了自动化。但项目体量变大、需要跨平台时，手写维护 Makefile 成本极高
 - **CMake**：更高层的构建工具。你只需要写一份**平台无关**的 `CMakeLists.txt` 配置文件，CMake 就能自动生成对应平台的 Makefile（或 IDE 工程文件），完美解决大型项目、跨平台的构建难题
 - [] 核心关系：**CMake 生成 Makefile，Makefile 指导 make 工具完成编译**
-# Catkin 编译系统（ROS 专属）
+# Catkin 编译系统
 - Catkin 是 ROS 在 CMake 基础上扩展的编译构建系统，是 ROS 开发的核心工具。
 ## Catkin 工作空间结构
 - 工作空间就是开发 ROS 项目的根目录，标准结构包含 3 个文件夹：
